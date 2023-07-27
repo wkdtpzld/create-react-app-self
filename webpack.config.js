@@ -5,9 +5,9 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\. (js|jsx|ts|tsx)$/,
+                test: /\.(js|jsx|ts|tsx)$/,
+                loader: "babel-loader",
                 exclude: /node_modules/,
-                loader: "babel-loader"
             }
         ]
     },
@@ -18,7 +18,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./index.html", // 번들링 파일을 주입하여 번들링 폴더로 복사할 대상 HTML 파일을 설정
+            template: "./public/index.html", // 번들링 파일을 주입하여 번들링 폴더로 복사할 대상 HTML 파일을 설정
         }),
     ],
     devServer: { // webpack-dev-server 옵션 설정
@@ -27,6 +27,6 @@ module.exports = {
         hot: true, // 모듈 전체를 로드하지 않고 변경된 사항만 갱신
     },
     resolve: { // resolve: import 를 할 때 확장자를 생략할 수 있습니다.
-        extensions: ['.jsx', 'js']
+        extensions: ['.jsx', '.js']
     }
 }

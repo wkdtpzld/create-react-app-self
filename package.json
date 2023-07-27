@@ -20,12 +20,18 @@
   },
   "homepage": "https://github.com/wkdtpzld/create-react-app-self#readme",
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
+    "babel-loader": "^9.1.3",
     "eslint": "^8.45.0",
     "eslint-plugin-react": "^7.33.0",
     "html-webpack-plugin": "^5.5.3",
