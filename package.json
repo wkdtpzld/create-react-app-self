@@ -1,0 +1,24 @@
+{
+  "name": "react-cra",
+  "version": "1.0.0",
+  "description": "react-cra",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wkdtpzld/create-react-app-self.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wkdtpzld/create-react-app-self/issues"
+  },
+  "homepage": "https://github.com/wkdtpzld/create-react-app-self#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
