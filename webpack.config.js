@@ -2,6 +2,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
+    module: {
+        rules: [
+            {
+                test: /\. (js|jsx|ts|tsx)$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
+            }
+        ]
+    },
     entry: './src/index.jsx', // webpack 최초 진입점 파일 경로 설정 옵션
     output: { // webpack 을 실행한 이후 결과물의 이름 / 경로 등을 설정
         filename: "main.js",
